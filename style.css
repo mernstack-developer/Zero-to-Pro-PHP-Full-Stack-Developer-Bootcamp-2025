@@ -121,3 +121,73 @@ input, textarea {
         margin-top: 10px;
     }
 }
+/* Add to the end of the file */
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.profile-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-content h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.about-me h3 {
+    color: #007bff;
+    margin: 20px 0 10px;
+    font-size: 1.4rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0 25px;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #e9ecef;
+    padding: 8px 15px;
+    border-radius: 20px;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .skills {
+        justify-content: center;
+    }
+}
